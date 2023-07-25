@@ -1,2 +1,11 @@
 <h1> Sejam bem vindos! </h1>
-<p>Testando ERB: <%= "adelia".reverse %> </p>
+
+<p>Data: <%=format_date_to_br(Date.today)  %></p>,
+<p><%= app_name %></p>
+
+<%= render "menu" %>
+
+
+<p> Você está em ambiente de <%=Rails.env%></p>
+
+<p><%=@nome%>, seja bem vindo ao curso de <%=@curso%>!</p>
